@@ -1,10 +1,10 @@
 node{
 
-   def tomcatWeb = 'c:\\apache-tomcat-9.0.64\\webapps'
-   def tomcatBin = 'c:\\apache-tomcat-9.0.64\\bin'
+   def tomcatWeb = 'C:\Program Files\Apache-tomcat\apache-tomcat-8.5.81-windows-x64\apache-tomcat-8.5.81\webapps'
+   def tomcatBin = 'C:\Program Files\Apache-tomcat\apache-tomcat-8.5.81-windows-x64\apache-tomcat-8.5.81\bin'
    def tomcatStatus = ''
    stage('SCM Checkout'){
-     git 'https://github.com/cubeiplKumar/JenkinsPipelineDemo.git'
+     git 'https://github.com/Nehanaren/JenkinsPipeline_Demo.git'
    }
    stage('Compile-Package-create-war-file'){
       // Get maven home path
